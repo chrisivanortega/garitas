@@ -25,3 +25,23 @@
       </div>
    </body>
 </html>
+
+<script>
+    $(function(){
+
+        $.ajax({
+        url: 'https://enkindled-screen.000webhostapp.com/api/',
+        type: 'get',
+        dataType: 'json',
+        success: function(result){
+            alert(result);
+        },
+        error: function(result){
+            alert(result);
+        }
+    });
+
+    })
+
+
+</script>
